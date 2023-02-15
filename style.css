@@ -39,3 +39,16 @@ position: absolute;
 .cross:hover{
     background-image: linear-gradient(to right, #e62323, #e62323);
 }
+
+.inpuut{
+    font-size: 1.5rem;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    top: 20%;
+    justify-content: center;
+}

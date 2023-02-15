@@ -56,24 +56,44 @@
 // let newCow = new Cow(4, 1, 1)
 // console.log(newCow.Printfull())
 
-const inp = document.getElementById("input-field")
-const btn = document.getElementById("button")
-const inp_text = document.getElementById("in-text")
-const cross = document.getElementById("crss")
+// const inp = document.getElementById("input-field")
+// const btn = document.getElementById("button")
+// const inp_text = document.getElementById("in-text")
+// const cross = document.getElementById("crss")
 
 
-btn.onclick = function(){
+// btn.onclick = function(){
     // let input = inp.value
     // inp_text.innerText = input
-    inp_text.style.right = "0px"
-    cross.style.visibility = "visible"
-    element.setAttribute("required");
+    // inp_text.style.right = "0px"
+    // cross.style.visibility = "visible"
+    // element.setAttribute("required");
     // let notification = "You enter a notification text"
     // document.innerText = notification
 
-}
-cross.onclick = function(){
-    inp_text.style.right = "-400px"
-    cross.style.visibility = "hidden"
+// }
+// cross.onclick = function(){
+//     inp_text.style.right = "-400px"
+//     cross.style.visibility = "hidden"
 
+// }
+
+let text = document.getElementById("text")
+let btn = document.getElementById("submit")
+let demo = document.getElementById("demo")
+
+btn.onclick = function () {
+    // demo.innerHTML = text.value
+
+
+    // let myTxt = document.createTextNode(p)
+    // demo.appendChild("text")
+
+    let myTxt = document.createElement("p")
+    myTxt.innerHTML = text.value
+    demo.appendChild(myTxt)
+
+
+    // input er por input text null korar jonno
+    text.value = ("")
 }
